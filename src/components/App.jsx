@@ -3,6 +3,7 @@ import { HousingList } from "./HousingList"
 import { PageError } from "./PageError";
 import { Footer, Header } from "./Banner";
 import { About } from "./About";
+import "../styles/index.scss"
 
 const router = createBrowserRouter([
   {
@@ -33,8 +34,8 @@ const router = createBrowserRouter([
 
 function Root () {
   return <>
-    <header><Header/></header>
-    <div>
+    <header className="margin"><Header/></header>
+    <div className="margin">
       <Outlet/>
     </div>
     <footer><Footer/></footer>
