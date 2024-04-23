@@ -2,6 +2,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"
 import { HousingList } from "./HousingList"
 import { PageError } from "./PageError";
 import { Footer, Header } from "./Banner";
+import { About } from "./About";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
       },
       {
         path: "about",
-        element: <div>A propos</div>
+        element: <About/>
       },
       {
         path: "logement",
