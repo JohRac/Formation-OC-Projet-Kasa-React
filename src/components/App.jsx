@@ -1,18 +1,30 @@
-import { NavLink, Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"
 import { HousingList } from "./HousingList"
+import { PageError } from "./PageError";
+import { Footer, Header } from "./Banner";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root/>,
+    errorElement: <PageError/>,
     children: [
       {
-        path: "Accueil",
-        element: <div>Accueil</div>
+        path: "/",
+        element: <div>Accueil</div>,
       },
       {
-        path: "A propos",
+        path: "about",
         element: <div>A propos</div>
+      },
+      {
+        path: "logement",
+        children: [
+          {
+            path: ":id",
+            element: <HousingList/>
+          },
+        ]
       },
     ]
   }
@@ -20,15 +32,11 @@ const router = createBrowserRouter([
 
 function Root () {
   return <>
-    <header>
-      <nav>
-        <NavLink to={"/"}>Accueil</NavLink>
-        <NavLink to={"/A propos"}>A propos</NavLink>
-      </nav>
-    </header>
+    <header><Header/></header>
     <div>
       <Outlet/>
     </div>
+    <footer><Footer/></footer>
   </>
 }
 
