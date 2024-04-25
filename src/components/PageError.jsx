@@ -4,7 +4,7 @@ import "../styles/index.scss"
 
 export function PageError () {
     return <>
-        <header>
+        <header className="margin">
             <Header/>
         </header>
         <div id="pageError">

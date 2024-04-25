@@ -4,6 +4,7 @@ import { PageError } from "./PageError";
 import { Footer, Header } from "./Banner";
 import { About } from "./About";
 import "../styles/index.scss"
+import { Home } from "./Home";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <div>Accueil</div>,
+        element: <Home/>,
       },
       {
         path: "about",
@@ -48,3 +49,4 @@ function App() {
 }
 
 export default App
+ 
