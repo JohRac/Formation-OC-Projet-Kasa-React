@@ -1,5 +1,6 @@
 import HomeImg from "../assets/HomeImg.png"
 import "../styles/Index.scss"
+import { HousingList } from "./HousingList"
 
 
 export function Home () {
@@ -12,7 +13,7 @@ export function Home () {
                     <p className="container__p">Chez vous, partout et ailleurs</p>
                 </div>
             </div>
-            <div>Liste logement</div>
+            <HousingList/>
         </div>
     </>
 }

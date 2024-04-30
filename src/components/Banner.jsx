@@ -5,19 +5,12 @@ import { NavLink } from "react-router-dom"
 
 
 export function Header () {
-    return (/*
+    return (
         <div id="Header">
             <img src={HeaderLogo} alt="Kasa"/>
             <nav id="nav">
-                <NavLink exact to="/" activeClassName="active">Accueil</NavLink>
-                <NavLink to="/about" activeClassName="active">A Propos</NavLink>
-            </nav>
-        </div>*/
-        <div id="Header">
-            <img src={HeaderLogo} alt="Kasa"/>
-            <nav id="nav">
-                <NavLink exact to="/" activeClassName="active">Accueil</NavLink>
-                <NavLink to="/about" activeClassName="active">A Propos</NavLink>
+                <NavLink exact="true" to="/" activeclassname="active">Accueil</NavLink>
+                <NavLink to="/about" activeclassname="active">A Propos</NavLink>
             </nav>
         </div>
     );
