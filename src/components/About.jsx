@@ -1,17 +1,17 @@
 import { aboutList } from "./AboutList.jsx"
 import AboutImg from "../assets/AboutImg.png"
 import { Collapse } from "./Collapse.jsx";
-import "../styles/index.scss"
+import "../styles/Index.scss"
 
 export function About() {
 
     return (
         <div className="container">
-            <div className="container__overlay">
+            <div className="container__overlay2">
                 <img className="container__img" src={AboutImg} alt="Un paysage forestier avec des montagnes en arrière plan"/>
-                <div className="container__background"></div>
+                <div className="container__background2"></div>
             </div>
-                <ul>
+                <ul id="aboutPage">
                 { aboutList.map((about,index) =>
                     <li key={"about"+index}>
                         <Collapse title={about.title} content={about.content} />

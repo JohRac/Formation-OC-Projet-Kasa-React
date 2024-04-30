@@ -1,10 +1,11 @@
+
 #Header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     #nav {
         display: flex;
-        gap: 57px
+        gap: 65px
         ;
         font-size: 24px;
         font-weight: 500;
@@ -14,8 +15,13 @@
 
         }
     }
-
+    .active {
+        text-decoration: underline !important;
+        text-decoration-thickness: 2px !important;
+    }
 }
+
+
 
 
 #Footer {

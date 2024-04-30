@@ -1,5 +1,5 @@
 import HomeImg from "../assets/HomeImg.png"
-import "../styles/index.scss"
+import "../styles/Index.scss"
 
 
 export function Home () {

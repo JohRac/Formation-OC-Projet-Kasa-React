@@ -3,7 +3,7 @@ import { HousingList } from "./HousingList"
 import { PageError } from "./PageError";
 import { Footer, Header } from "./Banner";
 import { About } from "./About";
-import "../styles/index.scss"
+import "../styles/Index.scss"
 import { Home } from "./Home";
 
 const router = createBrowserRouter([

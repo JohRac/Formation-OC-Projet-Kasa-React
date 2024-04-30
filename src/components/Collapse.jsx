@@ -1,7 +1,8 @@
-import "../styles/index.scss"
+import "../styles/Index.scss"
+import "../styles/Collapse.scss"
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 export function Collapse({ title, content }) {
     const [showMore, setShowMore] = useState(false);
@@ -10,11 +11,13 @@ export function Collapse({ title, content }) {
         setShowMore(!showMore);
     }
 
-    return (
-        <div>
-            <h6>{title}</h6>
-            <button onClick={handleMoreClick}> <FontAwesomeIcon className={showMore ?"favHide":"favShow"} icon={faChevronRight}/></button>
-            {showMore && <p>{content}</p>}
-        </div>
-    )
+    return <>
+        <div className="collapse__container">
+            <h6 className="collapse__title">{title}</h6>
+            <button className="collapse__btn" onClick={handleMoreClick}>
+                <FontAwesomeIcon className={showMore ?"favHide":"favShow"} icon={faChevronUp}/>
+            </button>
+        </div> 
+        {showMore && <span className="collapse__content">{content}</span>}
+    </>
 }

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Footer, Header } from "./Banner";
-import "../styles/index.scss"
+import "../styles/Index.scss"
 
 export function PageError () {
     return <>
