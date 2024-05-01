@@ -1,10 +1,10 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom"
-import { HousingList } from "./HousingList"
 import { PageError } from "./PageError";
 import { Footer, Header } from "./Banner";
 import { About } from "./About";
 import "../styles/Index.scss"
 import { Home } from "./Home";
+import { Accommodation } from "./Accommodation";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
         path: ":id",
-        element: <div>coucou</div>
+        element: <Accommodation/>
       },
     ]
   }

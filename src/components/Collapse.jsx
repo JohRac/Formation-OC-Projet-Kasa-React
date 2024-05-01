@@ -14,7 +14,7 @@ export function Collapse({ title, content }) {
     return <>
         <div className="collapse__container">
             <h6 className="collapse__title">{title}</h6>
-            <button className="collapse__btn" onClick={handleMoreClick}>
+            <button className="btn" onClick={handleMoreClick}>
                 <FontAwesomeIcon className={showMore ?"favHide":"favShow"} icon={faChevronUp}/>
             </button>
         </div> 
