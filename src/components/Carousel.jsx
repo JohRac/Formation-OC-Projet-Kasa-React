@@ -2,9 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons"
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons"
 import { useState } from "react";
+import "../styles/Carousel.scss"
 
-export function Carousel ({ pictures }) {
-    
+export function Carousel({ pictures }) {
+
     const [index, setIndex] = useState(0);
 
     function handleNextClick() {
@@ -24,26 +25,21 @@ export function Carousel ({ pictures }) {
     }
 
     let picture = pictures[index]
-    let btnsHidden = document.querySelectorAll(".btnHidden")
 
-    if (pictures.length === 1) {
-        btnsHidden.forEach(btn => {
-            btn.style.display = "none"
-        });
-    }
-    
-    return (
-        <div>
-            <img key={"picture" + index} className=""
-                src={picture}
-                alt=""
-            />
-            <button className=".btn btnHidden " onClick={handlePreviousClick}>
-                <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
-            <button className=".btn btnHidden " onClick={handleNextClick}>
-                <FontAwesomeIcon icon={faChevronRight} />
-            </button>
-        </div>
-    )
+    return <div className="carousel">
+        <img key={"picture" + index} className="carousel__img"
+            src={picture}
+            alt=""
+        />
+
+        {pictures.length > 1 &&
+            <>
+                <button className="btn carousel__btn left" onClick={handlePreviousClick}>
+                    <FontAwesomeIcon icon={faChevronLeft} />
+                </button>
+                <button className="btn carousel__btn right" onClick={handleNextClick}>
+                    <FontAwesomeIcon icon={faChevronRight} />
+                </button>
+            </>}
+    </div>
 }

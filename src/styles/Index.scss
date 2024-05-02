@@ -5,12 +5,19 @@
 :root {
   --main-color: rgba(255, 96, 96, 1);
   --collapse-bg-color: rgba(246, 246, 246, 0.45);
+  max-width: 1440px;
 }
 
 body {
   margin: 0px;
   padding-top: 40px;
+  font-weight: 500;
   
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
 }
 
 li {
@@ -87,7 +94,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin: 35px 100px 35px 60px;
+  margin: 35px 100px 35px 100px;
 }
 
 #pageError {

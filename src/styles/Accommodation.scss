@@ -1,0 +1,86 @@
+.intro {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    .housing{
+        display: flex;
+        flex-direction: column;
+        gap: 5px
+        ;
+
+        .housing__title {
+            font-size: 36px;
+            font-weight: 500;
+            color: var(--main-color);
+        }
+        .housing__location {
+            font-size: 18px;
+            font-weight: 500;
+
+        }
+        .tagsList {
+            display: flex;
+            padding-top: 10px;
+            gap: 10px;
+            .tag {
+                font-size: 14px;
+                font-weight: 700;
+                color: white;
+                border-radius: 10px;
+                background-color: var(--main-color);
+                padding: 4px 20px;
+            }
+        }
+    }
+    .profil {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+       .host {
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+        .host__name {
+            font-size: 18px;
+            color: var(--main-color);
+            text-align: end;
+            .word {
+                display: block;
+            }
+
+        }
+        .host__img {
+            height: 64px;
+            width: 64px;
+            border-radius: 33px;
+            transform: translateY(-20%);
+        }
+        
+        
+    }
+    .ratingStar{
+            display: flex;
+            gap: 10px;
+            
+        } 
+    }
+    
+}
+
+.collapseTab {
+    display: flex;
+    padding-bottom: 50px;
+    gap: 75px;
+}
+
+.fa-star {
+    font-size: 24px;
+}
+
+.gold-star {
+    color: var(--main-color);
+}
+
+.gray-star {
+    color: rgba(227, 227, 227, 1);
+}

@@ -1,9 +1,12 @@
 .collapse__container {
+  width: 100%;
+}
+.collapse__dropdown {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px 10px 20px;
   background-color: var(--main-color);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .collapse__title {
@@ -15,11 +18,15 @@
 
 .collapse__content {
   display: flex;
-  border-radius: 10px 10px 5px 5px;
-  padding: 20px 20px 20px 20px;
+  border-radius: 0px 0px 10px 10px;
   background-color: var(--collapse-bg-color);
   font-size: 18px;
   font-weight: 400;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 .favShow {
