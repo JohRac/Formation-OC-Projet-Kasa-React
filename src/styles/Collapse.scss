@@ -54,3 +54,37 @@
     transform: rotate(0deg);
   }
 }
+
+@media (max-width: 768px) {
+
+  .collapseTab {
+    .collapse__container {
+      width: 100%;
+    }
+    .collapse__dropdown {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 10px 5px 10px;
+      background-color: var(--main-color);
+      border-radius: 10px;
+
+      .btn {
+        font-size: 100%;
+      }
+    }
+    
+    .collapse__title {
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0px;
+    }
+    
+    .collapse__content {
+      display: flex;
+      border-radius: 0px 0px 10px 10px;
+      background-color: var(--collapse-bg-color);
+      font-size: 14px;
+    }
+  }
+}

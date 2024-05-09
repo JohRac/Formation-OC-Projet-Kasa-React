@@ -23,3 +23,16 @@
         right: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .carousel {
+        width: 675px;
+        height: 300px;
+        
+        .carousel__btn {
+            top: 55%;
+            transform: translateY(-50%);
+            font-size: 50px;
+        }
+    }
+}
