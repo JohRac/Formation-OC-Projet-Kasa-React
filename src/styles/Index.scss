@@ -5,11 +5,11 @@
 :root {
   --main-color: rgba(255, 96, 96, 1);
   --collapse-bg-color: rgba(246, 246, 246, 0.45);
-  max-width: 1440px;
 }
 
 body {
-  margin: 0px;
+  max-width: 1440px;
+  margin: 0px auto;
   padding-top: 40px;
   font-weight: 500;
   
