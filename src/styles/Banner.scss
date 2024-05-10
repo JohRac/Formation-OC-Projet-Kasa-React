@@ -5,8 +5,7 @@
     align-items: center;
     #nav {
         display: flex;
-        gap: 65px
-        ;
+        gap: 65px;
         font-size: 24px;
         font-weight: 500;
         a {
@@ -35,4 +34,32 @@
     padding: 60px 0px 20px;
     font-size: 24px;
     font-weight: 500;
+}
+
+@media (max-width: 400px) {
+    #Header {
+        img {
+            width: 145px;
+        }
+        #nav {
+            gap: 25px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+    
+    
+    
+    
+    #Footer {
+        img {
+            width: 122px;
+        }
+        gap: 0px;
+        font-size: 12px;
+        padding: 60px 0px 50px;
+        p {
+            width: 25%;
+        }
+    }
 }

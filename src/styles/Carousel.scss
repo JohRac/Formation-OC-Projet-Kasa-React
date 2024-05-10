@@ -36,3 +36,16 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    .carousel {
+        width: 355px;
+        height: 255px;
+        
+        .carousel__btn {
+            top: 55%;
+            transform: translateY(-50%);
+            font-size: 24px;
+        }
+    }
+}

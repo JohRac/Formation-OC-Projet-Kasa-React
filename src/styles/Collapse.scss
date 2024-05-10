@@ -75,3 +75,41 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+
+  .collapse__dropdown {
+    padding: 8px 10px 6px 10px;
+    gap: 15px;
+
+    .btn {
+      font-size: 100%;
+    }
+  }
+  
+  .collapse__title {
+    font-size: 13px;
+  }
+  
+  .collapse__content {
+    font-size: 12px;
+  }
+
+  .collapseTab {
+    .collapse__dropdown {
+      padding: 8px 10px 5px 10px;
+
+      .btn {
+        font-size: 100%;
+      }
+    }
+    
+    .collapse__title {
+      font-size: 13px;
+    }
+    
+    .collapse__content {
+      font-size: 12px;
+    }
+  }
+}

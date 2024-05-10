@@ -103,7 +103,7 @@
             }
 
             .housing__location {
-                font-size: 12px;
+                font-size: 14px;
             }
 
             .tagsList {
@@ -134,5 +134,58 @@
 
     .collapseTab {
         padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .intro {
+        flex-direction: column;
+        gap: 20px;
+        .housing {
+            .housing__title {
+                font-size: 18px;
+            }
+
+            .housing__location {
+                font-size: 14px;
+            }
+
+            .tagsList {
+                .tag {
+                    font-size: 9px;
+                }
+            }
+        }
+
+        .profil {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            .host {
+                .host__name {
+                    font-size: 12px;
+                }
+
+                .host__img {
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+            .ratingStar {
+                gap: 5px;
+            }
+
+        }
+    }
+
+    .fa-star {
+        font-size: 13px;
+    }
+
+    .collapseTab {
+        flex-direction: column;
+        padding-bottom: 25px;
+        gap: 25px;
     }
 }

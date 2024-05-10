@@ -70,3 +70,32 @@
       }
     }
 }
+
+@media (max-width: 400px) {
+
+    #housingList {
+      grid-template-columns: 100%;
+      grid-row-gap: 25px;
+      grid-column-gap: 30px;
+      padding: 0px 0px;
+      background-color: white;
+      margin-bottom: 25px;
+  
+      a { 
+          width: auto;  
+      }
+  
+      .housingList__img {
+          height: 255px;
+      }
+  
+      .housingList__title {
+          top: 75%;
+          font-size: 18px;
+      }
+      .housingList__title_background {
+          height: 25%;
+          top: 75%;
+      }
+    }
+}

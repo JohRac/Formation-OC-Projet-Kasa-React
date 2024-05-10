@@ -94,7 +94,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin: 35px 100px 35px 100px;
+  margin: 35px 100px;
 }
 
 #pageError {
@@ -154,6 +154,41 @@ li {
 
 
 @media (max-width: 400px) {
-  
 
+
+  
+  .margin {
+    margin: 0px 25px;
+  }
+
+  .container {
+    .container__overlay, .container__overlay2 {
+      height: 110px;
+      .container__p {
+        font-size: 24px;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  #aboutPage {
+    gap: 20px;
+    margin: 20px 0px;
+  }
+
+  #pageError {
+    gap: 50px;
+    padding: 50px 0px;
+    #error {
+      font-weight: 700;
+      font-size: 100px;
+    }
+    
+    p {
+      font-size: 14px;
+    }
+    a {
+      font-size: 10px;
+    }
+  }
 }
