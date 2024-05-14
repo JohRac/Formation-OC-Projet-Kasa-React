@@ -1,4 +1,4 @@
-import { aboutList } from "./AboutList.jsx"
+import aboutList  from "../assets/AboutList.json"
 import AboutImg from "../assets/AboutImg.png"
 import { Collapse } from "./Collapse.jsx";
 import "../styles/Index.scss"

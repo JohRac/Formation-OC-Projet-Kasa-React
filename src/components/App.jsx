@@ -30,11 +30,11 @@ const router = createBrowserRouter([
 
 function Root () {
   return <>
-    <header className="margin"><Header/></header>
+    <div className="margin"><Header/></div>
     <div className="margin">
       <Outlet/>
     </div>
-    <footer><Footer/></footer>
+    <Footer/>
   </>
 }
 
