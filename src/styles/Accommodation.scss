@@ -1,0 +1,191 @@
+.intro {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .housing {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .housing__title {
+            font-size: 36px;
+            font-weight: 500;
+            color: var(--main-color);
+        }
+
+        .housing__location {
+            font-size: 18px;
+            font-weight: 500;
+
+        }
+
+        .tagsList {
+            display: flex;
+            padding-top: 10px;
+            gap: 10px;
+
+            .tag {
+                font-size: 14px;
+                font-weight: 700;
+                color: white;
+                border-radius: 10px;
+                background-color: var(--main-color);
+                padding: 4px 20px;
+            }
+        }
+    }
+
+    .profil {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .host {
+            display: flex;
+            gap: 10px;
+            justify-content: end;
+
+            .host__name {
+                font-size: 18px;
+                color: var(--main-color);
+                text-align: end;
+
+                .word {
+                    display: block;
+                }
+
+            }
+
+            .host__img {
+                height: 64px;
+                width: 64px;
+                border-radius: 33px;
+                transform: translateY(-20%);
+            }
+
+
+        }
+
+        .ratingStar {
+            display: flex;
+            gap: 10px;
+
+        }
+    }
+
+}
+
+.collapseTab {
+    display: flex;
+    padding-bottom: 50px;
+    gap: 75px;
+}
+
+.fa-star {
+    font-size: 24px;
+}
+
+.gold-star {
+    color: var(--main-color);
+}
+
+.gray-star {
+    color: rgba(227, 227, 227, 1);
+}
+
+@media (max-width: 768px) {
+
+    .intro {
+        .housing {
+            .housing__title {
+                font-size: 18px;
+            }
+
+            .housing__location {
+                font-size: 14px;
+            }
+
+            .tagsList {
+                .tag {
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .profil {
+            .host {
+                .host__name {
+                    font-size: 12px;
+                }
+
+                .host__img {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+
+        }
+    }
+
+    .fa-star {
+        font-size: 18px;
+    }
+
+    .collapseTab {
+        padding-bottom: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .intro {
+        flex-direction: column;
+        gap: 20px;
+        .housing {
+            .housing__title {
+                font-size: 18px;
+            }
+
+            .housing__location {
+                font-size: 14px;
+            }
+
+            .tagsList {
+                .tag {
+                    font-size: 9px;
+                }
+            }
+        }
+
+        .profil {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            .host {
+                .host__name {
+                    font-size: 12px;
+                }
+
+                .host__img {
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+            .ratingStar {
+                gap: 5px;
+            }
+
+        }
+    }
+
+    .fa-star {
+        font-size: 13px;
+    }
+
+    .collapseTab {
+        flex-direction: column;
+        padding-bottom: 25px;
+        gap: 25px;
+    }
+}
