@@ -4,16 +4,8 @@ import "../styles/Accommodation.scss"
 
 export function RatingStar ({ rating }) {
     
-  const maxRating = 5;
-
-  const stars = [];
-
-  for (let i = 0; i < maxRating; i++) {
-    const iconClass = i < rating ? "gold-star" : "gray-star";
-    stars.push(<FontAwesomeIcon key={i} icon={faStar} color={i < rating ? "gold" : "gray"} className={iconClass}/>);
-  }
 
   return <>
-    {stars}
+    {[...Array(5).keys()].map(i => <FontAwesomeIcon key={i} icon={faStar} color={i < rating ? "gold" : "gray"} className={i < rating ? "gold-star" : "gray-star"}/>)}
   </>
 }
