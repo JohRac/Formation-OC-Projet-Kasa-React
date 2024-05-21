@@ -37,6 +37,7 @@ export function Carousel({ pictures }) {
                 <button className="btn carousel__btn left" onClick={handlePreviousClick}>
                     <FontAwesomeIcon icon={faChevronLeft} />
                 </button>
+                <span className="carousel__index">{index + 1}/{pictures.length}</span>
                 <button className="btn carousel__btn right" onClick={handleNextClick}>
                     <FontAwesomeIcon icon={faChevronRight} />
                 </button>
