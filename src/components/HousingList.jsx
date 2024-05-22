@@ -11,7 +11,6 @@ export function HousingList () {
                         src={housing.cover}
                         alt={housing.title}
                     />
-                    <span className="housingList__title_background"/>
                     <span className="housingList__title" >{housing.title}</span>
                 </NavLink>
             )}
